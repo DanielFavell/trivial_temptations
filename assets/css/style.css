@@ -1,0 +1,23 @@
+*{
+    font-family: 'Rubik', sans-serif;
+}
+
+#question-area{
+       margin-top: 20px;
+}
+
+#question-box{
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#picture-question{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
