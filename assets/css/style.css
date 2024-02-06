@@ -20,4 +20,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
+
+
+ .size {
+    width: 100px;
+    height: 50px;
+}
+
+#all-buttons {
+    text-align: center;
+    margin-top: 100px;
+}
+
+@media only screen and (min-width: 400px) {
+
+
+    
+    #buttons-1-2 {
+        margin-bottom: 100px;
+    }
+    
+    .left {
+        margin-left: 25px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 510px) {
+    
+    .left {
+        margin-left: 100px;
+    }
+
