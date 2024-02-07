@@ -34,7 +34,7 @@
     text-align: center;
     margin-top: 100px;
 }
-button{
+#submit{
     background-color: #03cae4;
     color: fff;
     border: none;
@@ -76,3 +76,4 @@ button:focus{
     .left {
         margin-left: 100px;
     }
+}
