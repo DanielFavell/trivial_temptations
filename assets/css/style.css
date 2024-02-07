@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgb(41, 138, 109);
+    background-color: rgb(2, 46, 35);
   }
 
 #question-area{
@@ -29,12 +29,13 @@ body {
     justify-content: center;
     align-items: center;
     
+    
 }
 
 
  .size {
-    width: 150px;
-    height: 50px;
+    width: 200px;
+    height: 100px;
 }
 
 #all-buttons {
@@ -42,8 +43,8 @@ body {
     margin-top: 100px;
 }
 #submit{
-    background-color: #162141;
-    /*color: fff;*/
+    background-color: #2fc76e;
+    color: fff;
     border-color: black;
    display: block;
     width: 30%;
@@ -51,6 +52,7 @@ body {
     font-size: 200%;
     font-family: inherit;
     /*padding: 1.3rem;*/
+    margin: auto;
     margin-top:50px;
     margin-bottom: 50px;
     text-align: center;
@@ -69,7 +71,7 @@ button:focus{
     background-color: #44b927;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 434px) {
 
 
     
