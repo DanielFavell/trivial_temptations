@@ -1,7 +1,13 @@
 
 *{
     font-family: 'Rubik', sans-serif;
+    margin: 0; 
+    padding: 0;
 }
+
+body {
+    background-color: rgb(2, 46, 35);
+  }
 
 #question-area{
        margin-top: 20px;
@@ -15,19 +21,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 #picture-question{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
+    
 }
 
 
  .size {
-    width: 100px;
-    height: 50px;
+    width: 200px;
+    height: 100px;
 }
 
 #all-buttons {
@@ -35,15 +43,23 @@
     margin-top: 100px;
 }
 #submit{
-    background-color: #03cae4;
+    background-color: #2fc76e;
     color: fff;
-    border: none;
-    display: block;
-    width: 100%;
+    border-color: black;
+   display: block;
+    width: 30%;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 200%;
     font-family: inherit;
-    padding: 1.3rem;
+    /*padding: 1.3rem;*/
+    margin: auto;
+    margin-top:50px;
+    margin-bottom: 50px;
+    text-align: center;
+    height: 300%;
+    width: 150px;
+    
+
 }
 
 button:hover{
@@ -55,7 +71,7 @@ button:focus{
     background-color: #44b927;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 434px) {
 
 
     
