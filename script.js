@@ -61,8 +61,9 @@ function randomQuestionFromArray() {
 }
 
 function generateAnswers() {
+    let randomOffset = Math.floor(Math.random() * 4);
     for (let i = 0; i < randomQuestion.possibleAnswers.length; i++) {
-            answerButtons[i].textContent = randomQuestion.possibleAnswers[i];
+            answerButtons[(i+randomOffset)%4].textContent = randomQuestion.possibleAnswers[i];
     }
 }
 
