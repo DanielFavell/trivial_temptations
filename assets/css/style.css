@@ -1,7 +1,13 @@
 
 *{
     font-family: 'Rubik', sans-serif;
+    margin: 0; 
+    padding: 0;
 }
+
+body {
+    background-color: rgb(41, 138, 109);
+  }
 
 #question-area{
        margin-top: 20px;
@@ -15,18 +21,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 #picture-question{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
 }
 
 
  .size {
-    width: 100px;
+    width: 150px;
     height: 50px;
 }
 
@@ -35,15 +42,22 @@
     margin-top: 100px;
 }
 #submit{
-    background-color: #03cae4;
-    color: fff;
-    border: none;
-    display: block;
-    width: 100%;
+    background-color: #162141;
+    /*color: fff;*/
+    border-color: black;
+   display: block;
+    width: 30%;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 200%;
     font-family: inherit;
-    padding: 1.3rem;
+    /*padding: 1.3rem;*/
+    margin-top:50px;
+    margin-bottom: 50px;
+    text-align: center;
+    height: 300%;
+    width: 150px;
+    
+
 }
 
 button:hover{
