@@ -45,7 +45,7 @@ The live link can be found here - https://danielfavell.github.io/trivial_temptat
 
 ### Content 
 
-- The code to acces a key from its value was taken from https://stackoverflow.com/questions/9907419/how-to-get-a-key-in-a-javascript-object-by-its-value
+- The code to access a key from its value was taken from https://stackoverflow.com/questions/9907419/how-to-get-a-key-in-a-javascript-object-by-its-value
 - Some of the code to access the value of a promise was taken from https://stackoverflow.com/questions/29516390/how-can-i-access-the-value-of-a-promise
 - The icons in the footer were taken from ...
 
