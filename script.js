@@ -16,7 +16,7 @@ const questionArray = [
         possibleAnswers: ["London", "Paris", "Cardiff", "Berlin"],
     },
 ];
-let score = 0;
+let score = document.querySelector("#scoreNumber");
 let randomQuestion = null;
 const answerButtons = document.querySelectorAll(".answers-button");
 let selectedAnswer = null;
@@ -32,11 +32,11 @@ function pageLoaded() {
 window.onload = pageLoaded();
 
 function increaseScore() {
-    score += 1;
+    score.textContent = Number(score.textContent)+1;
 }
 
 function decreaseScore() {
-    score -= 1;
+    score.textContent = Number(score.textContent)-1;
 }
 
 function submitAnswer() {
