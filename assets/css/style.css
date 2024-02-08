@@ -45,7 +45,7 @@ body {
 }
 #submit{
     background-color: #2fc76e;
-    color: fff;
+    /* color: fff; */
     border-color: black;
    display: block;
     width: 30%;
