@@ -16,7 +16,7 @@ const questionArray = [
         possibleAnswers: ["London", "Paris", "Cardiff", "Berlin"],
     },
 ];
-let score = 0;
+let score = document.querySelector("#scoreNumber");
 let randomQuestion = null;
 const answerButtons = document.querySelectorAll(".answers-button");
 let selectedAnswer = null;
@@ -31,12 +31,22 @@ function pageLoaded() {
 
 window.onload = pageLoaded();
 
+setInterval(() => { 
+    if(Number(document.querySelector('#timer').textContent) > 0){
+    let timeRemaining = Number(document.querySelector('#timer').textContent);
+    timeRemaining--
+    document.querySelector('#timer').textContent = timeRemaining;
+    }else{
+        submitAnswer()
+    }
+  }, 1000);
+
 function increaseScore() {
-    score += 1;
+    score.textContent = Number(score.textContent)+1;
 }
 
 function decreaseScore() {
-    score -= 1;
+    score.textContent = Number(score.textContent)-1;
 }
 
 function submitAnswer() {
@@ -54,6 +64,7 @@ function newQuestion() {
     questionText.textContent = randomQuestion.question;
     generateAnswers();
     selectedAnswer = null;
+    document.querySelector('#timer').textContent = "10"
 }
 
 function randomQuestionFromArray() {
