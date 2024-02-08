@@ -1,5 +1,5 @@
 const submitButton = document.querySelector("#submit");
-const questionArray = [];
+let questionArray = [];
 let questionObject = [];
 let possibleQuestions = [];
 let score = document.querySelector("#scoreNumber");
@@ -9,24 +9,12 @@ let selectedAnswer = null;
 let questionNumber = 0
 let gameEnded = false;
 
-async function pageLoaded() {
+function pageLoaded() {
     submitButton.addEventListener("click", submitAnswer);
     answerButtons.forEach(item => {
         item.addEventListener("click", updateSelectedAnswer)
     });
-
-    questionObject = await generateQuestionArray();
-    questionObject = questionObject.questions;
-
-
-    while (possibleQuestions.length < 10) {
-        possibleQuestions.push(Math.floor(Math.random() * 31))
-    }
-
-    for (let i = 0; questionArray.length < 10; i++) {
-        questionArray.push(questionObject[possibleQuestions[i]])
-    }
-    newQuestion();
+    startGame()
 }
 
 async function generateQuestionArray() {
@@ -44,7 +32,6 @@ window.onload = pageLoaded();
 
 setInterval(() => {
     if (gameEnded) { 
-        document.getElementById("submit").setAttribute("disabled", "");
         if (score.textContent === "10"){
         document.querySelector(".results").innerHTML = `<span class="perfect">Perfect</span> You answered 10 From 10`
         }
@@ -76,6 +63,10 @@ function getKeyByValue(object, value) {
     return Object.keys(object).find(key => object[key].trim() === value);
 }
 function submitAnswer() {
+    if(gameEnded){
+        startGame()
+    }
+    else{
     if (currentQuestion.correct_answer === getKeyByValue(currentQuestion.options, selectedAnswer)) {
         increaseScore();
     }
@@ -84,16 +75,17 @@ function submitAnswer() {
     // }
     questionNumber++
     document.querySelector(".off").classList = "on"
-    if (questionNumber === 9) {
+    if (questionNumber >= 9) {
         gameEnded = true;
     }
     newQuestion();
+}
 }
 
 function newQuestion() {
     const questionText = document.querySelector("#question-text");
     currentQuestion = questionArray[questionNumber];
-
+    console.log("generateQuestion")
     questionText.textContent = currentQuestion.question;
     generateAnswers();
     selectedAnswer = null;
@@ -113,4 +105,27 @@ function generateAnswers() {
 
 function updateSelectedAnswer() {
     selectedAnswer = this.innerText;
+}
+
+async function startGame(){
+    gameEnded = false;
+    questionNumber = 0;
+    questionArray = [];
+    questionObject = await generateQuestionArray();
+    questionObject = questionObject.questions;
+    possibleQuestions = [];
+    let progress = document.querySelectorAll(".on");
+    for (let circle of progress){
+        circle.classList = "off"
+    }
+    document.querySelector(".off").classList = "on"
+    document.querySelector(".results").innerHTML = ``
+    while (possibleQuestions.length < 10) {
+        possibleQuestions.push(Math.floor(Math.random() * 31))
+    }
+    for (let i = 0; questionArray.length < 10; i++) {
+        questionArray.push(questionObject[possibleQuestions[i]])
+    }
+    score.textContent = "0"
+    newQuestion();
 }
