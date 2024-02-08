@@ -46,9 +46,7 @@ function increaseScore() {
     score.textContent = Number(score.textContent) + 1;
 }
 
-// function decreaseScore() {
-//     // score.textContent = Number(score.textContent) - 1;
-// }
+
 function getKeyByValue(object, value) {
     return Object.keys(object).find(key => object[key].trim() === value);
 }
@@ -60,12 +58,10 @@ function submitAnswer() {
     if (currentQuestion.correct_answer === getKeyByValue(currentQuestion.options, selectedAnswer)) {
         increaseScore();
     }
-    // else {
-    //     decreaseScore();
-    // }
+   
     questionNumber++
-    document.querySelector(".off").classList = "on"
-    if (questionNumber >= 9) {
+    document.querySelector(".off").classList.replace("off","on")
+    if (questionNumber >= 10) {
         if (score.textContent === "10"){
             document.querySelector(".results").innerHTML = `<span class="perfect">Perfect</span> You answered 10 From 10`
             }
@@ -78,23 +74,22 @@ function submitAnswer() {
             submitButton.classList.add("redButton")
         gameEnded = true;
     }
+    else{
     newQuestion();
+    }
 }
 }
 
 function newQuestion() {
     const questionText = document.querySelector("#question-text");
     currentQuestion = questionArray[questionNumber];
-    console.log("generateQuestion")
     questionText.textContent = currentQuestion.question;
     generateAnswers();
     selectedAnswer = null;
     document.querySelector('#timer').textContent = "10"
 }
 
-// function randomNumberGenerator() {
-//     return Math.floor(Math.random() * questionArray.length);
-// }
+
 
 function generateAnswers() {
     answerButtons[0].textContent = currentQuestion.options.a;
@@ -120,10 +115,14 @@ async function startGame(){
     for (let circle of progress){
         circle.classList = "off"
     }
-    document.querySelector(".off").classList.replace("off","on")
+
     document.querySelector(".results").innerHTML = ``
     while (possibleQuestions.length < 10) {
-        possibleQuestions.push(Math.floor(Math.random() * 31))
+        let randomQuestionNumber = Math.floor(Math.random() * 31);
+        if (possibleQuestions.includes(randomQuestionNumber)){
+        continue;
+        }
+        possibleQuestions.push(randomQuestionNumber)
     }
     for (let i = 0; questionArray.length < 10; i++) {
         questionArray.push(questionObject[possibleQuestions[i]])
