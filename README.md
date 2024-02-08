@@ -10,7 +10,7 @@ At the end of the game the user is give a message telling them how well they did
 
 ### Features Left to Implement
 
-- Feature ideas...
+- Originally it had been planned to have a number of different quizzes that the user could select from on a home page.
 
 ## Testing 
 
@@ -41,6 +41,11 @@ The live link can be found here - https://danielfavell.github.io/trivial_temptat
 
 
 ## Credits 
+
+Daniel Favell
+Sam Danzig
+Sherrif
+
 
 
 ### Content 
