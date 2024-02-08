@@ -11,10 +11,14 @@ body {
   }
 
   #backgroundimage{
-    width: 30%;
-    height: 30%;
-    margin-left: 35%;
-    margin-top: 7%;
+    width: 450px;
+    height: 225px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    text-align: center;
+    
   }
 
 #question-area{
@@ -25,11 +29,12 @@ body {
     margin-top: 5px;
     border: 1px solid black;
     border-radius: 10px;
-    height: 15vh;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
+    background-image: url("./assets/images/htmlcss.png");
 }
 
 #picture-question{
@@ -42,13 +47,13 @@ body {
 
 
  .size {
-    width: 200px;
-    height: 100px;
+    width: 500px;
+    height: 50px;
 }
 
 #all-buttons {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 #submit{
     background-color: #2fc76e;
@@ -119,6 +124,11 @@ button:focus{
 
 .center{
     text-align: center;
+    
+}
+
+.footer {
+    margin-top: 5px;
 }
 
 
@@ -146,13 +156,13 @@ button:focus{
     background-color: #dc0a0a !important;
 }
 
-
+/*
 @media only screen and (min-width: 434px) {
 
 
 
-    
-    #buttons-1-2 {
+   
+   < #buttons-1-2 {
         margin-bottom: 100px;
     }
     
@@ -170,3 +180,5 @@ button:focus{
         margin-left: 100px;
     }
 }
+
+*/
