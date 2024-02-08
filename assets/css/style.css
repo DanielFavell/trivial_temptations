@@ -114,6 +114,10 @@ button:focus{
     text-align: center;
 }
 
+.redButton{
+    background-color: #dc0a0a !important;
+}
+
 @media only screen and (min-width: 434px) {
 
 

@@ -31,17 +31,7 @@ function saveInfo(info) {
 window.onload = pageLoaded();
 
 setInterval(() => {
-    if (gameEnded) { 
-        if (score.textContent === "10"){
-        document.querySelector(".results").innerHTML = `<span class="perfect">Perfect</span> You answered 10 From 10`
-        }
-        else if(Number(score.textContent) >= 5){
-            document.querySelector(".results").innerHTML = `<span class="good">Good</span> You have answered more than 5 From 10`
-        }else{
-            document.querySelector(".results").innerHTML = `<span class="try_again">Try Again</span> You have answered less than 5 From 10`
-        }
-    }
-    else {
+    if (!gameEnded){
         if (Number(document.querySelector('#timer').textContent) > 0) {
             let timeRemaining = Number(document.querySelector('#timer').textContent);
             timeRemaining--
@@ -76,6 +66,16 @@ function submitAnswer() {
     questionNumber++
     document.querySelector(".off").classList = "on"
     if (questionNumber >= 9) {
+        if (score.textContent === "10"){
+            document.querySelector(".results").innerHTML = `<span class="perfect">Perfect</span> You answered 10 From 10`
+            }
+            else if(Number(score.textContent) >= 5){
+                document.querySelector(".results").innerHTML = `<span class="good">Good</span> You have answered more than 5 From 10`
+            }else{
+                document.querySelector(".results").innerHTML = `<span class="try_again">Try Again</span> You have answered less than 5 From 10`
+            }
+            submitButton.innerText = "Reset"
+            submitButton.classList.add("redButton")
         gameEnded = true;
     }
     newQuestion();
@@ -115,10 +115,12 @@ async function startGame(){
     questionObject = questionObject.questions;
     possibleQuestions = [];
     let progress = document.querySelectorAll(".on");
+    document.querySelector("#submit").classList.remove("redButton")
+    submitButton.innerText = "Next"
     for (let circle of progress){
         circle.classList = "off"
     }
-    document.querySelector(".off").classList = "on"
+    document.querySelector(".off").classList.replace("off","on")
     document.querySelector(".results").innerHTML = ``
     while (possibleQuestions.length < 10) {
         possibleQuestions.push(Math.floor(Math.random() * 31))
