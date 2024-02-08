@@ -114,6 +114,7 @@ button:focus{
     text-align: center;
 }
 
+
 .footer a{
     color: #aaaaaa;
     transition: color 0.2s;
@@ -131,6 +132,11 @@ button:focus{
     font-size: small;
     color: darksalmon;
     
+}
+
+
+.redButton{
+    background-color: #dc0a0a !important;
 }
 
 
