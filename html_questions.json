@@ -265,7 +265,7 @@
         "a": "<background img='background.gif'> ",
         "b": "<body bg='background.gif'> ",
         "c": "<body style='background-image:url(background.gif)'>  ",
-        "d": "<body style='background-image:url(background/image.gif)'>  "
+        "d": "<body style='background-image:url(background/image.gif)'>"
       },
       "correct_answer": "c"
     },
