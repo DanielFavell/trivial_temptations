@@ -31,6 +31,16 @@ function pageLoaded() {
 
 window.onload = pageLoaded();
 
+setInterval(() => { 
+    if(Number(document.querySelector('#timer').textContent) > 0){
+    let timeRemaining = Number(document.querySelector('#timer').textContent);
+    timeRemaining--
+    document.querySelector('#timer').textContent = timeRemaining;
+    }else{
+        submitAnswer()
+    }
+  }, 1000);
+
 function increaseScore() {
     score.textContent = Number(score.textContent)+1;
 }
@@ -54,6 +64,7 @@ function newQuestion() {
     questionText.textContent = randomQuestion.question;
     generateAnswers();
     selectedAnswer = null;
+    document.querySelector('#timer').textContent = "10"
 }
 
 function randomQuestionFromArray() {
