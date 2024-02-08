@@ -1,4 +1,5 @@
 
+
 *{
     font-family: 'Rubik', sans-serif;
 }
@@ -55,6 +56,42 @@ button:focus{
     background-color: #44b927;
 }
 
+.bullets{
+    
+    border-top: 1px solid #dfdfdf;
+    background-color: #fff;
+    display: flex;
+    padding: 20px;
+}
+
+.spans{
+    flex: 1;
+    display: flex;
+}
+
+.spans span{
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.spans span.on{
+    background-color: #0075ff;
+}
+.results span{
+    font-weight: bold;
+}
+.results span.perfect{
+    color: #0075ff;
+}
+.results span.good{
+    color: #009688;
+}
+.results span.try_again{
+    color: #dc0a0a;
+}
 @media only screen and (min-width: 400px) {
 
 

@@ -1,0 +1,315 @@
+"questions": [
+    {
+      "question": "What does HTML stand for?",
+      "options": {
+        "a": "Hyper Text Markup Language",
+        "b": "Hyperlinks and Text Markup Language",
+        "c": "Home Tool Markup Language",
+        "d": "Hyper Transfer Markup Language"
+      },
+      "correct_answer": "a"
+    },
+    {
+      "question": "What is the correct CSS syntax to change the color of a text to blue?",
+      "options": {
+        "a": "text-color: blue;",
+        "b": "color: blue;",
+        "c": "font-color: blue;",
+        "d": "fg-color: blue;"
+      },
+      "correct_answer": "b"
+    },
+    {
+      "question": "What tag is used to define an unordered list?",
+      "options": {
+        "a": "<ol>",
+        "b": "<dl>",
+        "c": "<ul>",
+        "d": "<list>"
+      },
+      "correct_answer": "c"
+    },
+    {
+      "question": "Which property is used to change the font size of an element?",
+      "options": {
+        "a": "font-weight",
+        "b": "font-size",
+        "c": "text-size",
+        "d": "size"
+      },
+      "correct_answer": "b"
+    },
+    {
+      "question": "What does CSS stand for?",
+      "options": {
+        "a": "Cascading Style Sheets",
+        "b": "Computer Style Sheets",
+        "c": "Creative Style Sheets",
+        "d": "Colorful Style Sheets"
+      },
+      "correct_answer": "a"
+    },
+    {
+      "question": "How can you created rounded corners using CSS?",
+      "options": {
+        "a": "border[round]: 30px;",
+        "b": "corner-effect: round;",
+        "c": "border-radius: 30px; ",
+        "d": "alpha-effect: round-corner;"
+      },
+      "correct_answer": "c"
+    },
+     {
+      "question": "How do you add shadow to elements in CSS?",
+      "options": {
+        "a": "box-shadow: 10px 10px 5px grey; ",
+        "b": "shadow-right: 10px shadow-bottom: 10px;",
+        "c": "shadow-color: grey;",
+        "d": "alpha-effect[shadow]: 10px 10px 5px grey;"
+      },
+      "correct_answer": "a"
+    },
+     {
+      "question": "How to you modify a border image using CSS?",
+      "options": {
+        "a": "border: url(image.png);",
+        "b": "border-variable: image url(image.png);",
+        "c": "border-image: url(border.png) 30 30 round;",
+        "d": "None"
+      },
+      "correct_answer": "c"
+    },
+     {
+      "question": "How to resize a background image using CSS?",
+      "options": {
+        "a": "background-size: 80px 60px;",
+        "b": "bg-dimensions: 80px 60px;",
+        "c": "background-proportion: 80px 60px;",
+        "d": "alpha-effect: bg-resize 80px 60px;"
+      },
+      "correct_answer": "a"
+    },
+     {
+      "question": "How to rotate objects using CSS?",
+      "options": {
+        "a": "object-rotation: 30deg;",
+        "b": "transform: rotate(30deg); ",
+        "c": "rotate-object: 30deg;",
+        "d": "ransform: rotate-30deg-clockwise;"
+      },
+      "correct_answer": "b"
+    },
+    {
+      "question": "Who is making the Web standards?",
+      "options": {
+        "a": "The World Wide Web Consortium  ",
+        "b": "Mozilla",
+        "c": "Google",
+        "d": "Microsoft"
+      },
+      "correct_answer": "a"
+    },
+    {
+      "question": "Choose the correct HTML element for the largest heading:",
+      "options": {
+        "a": "<h6>",
+        "b": "<h1>",
+        "c": "<heading>",
+        "d": " <head>"
+      },
+      "correct_answer": "b"
+    },
+     {
+      "question": " What is the correct HTML element for inserting a line break?",
+      "options": {
+        "a": " <lb>",
+        "b": " <br>  ",
+        "c": "<break>",
+        "d": "<p> "
+      },
+      "correct_answer": "b"
+    },
+     {
+      "question": "What is the correct HTML for adding a background color?",
+      "options": {
+        "a": "<background>yellow</background>",
+        "b": "<body bg="yellow">",
+        "c": " <body style="background-color:yellow;">  ",
+        "d": " <body style="backgroundColor:yellow;">  "
+      },
+      "correct_answer": "c"
+    },
+     {
+      "question": "Choose the correct HTML element to define important text",
+      "options": {
+        "a": " <important>",
+        "b": "<strong>",
+        "c": "<i>",
+        "d": "<b>"
+      },
+      "correct_answer": " b"
+    },
+     {
+      "question": "Choose the correct HTML element to define emphasized text",
+      "options": {
+        "a": "<i>",
+        "b": "<em>",
+        "c": "<italic>",
+        "d": "<strong> "
+      },
+      "correct_answer": "b"
+    },
+     {
+      "question": "What is the correct HTML for creating a hyperlink?",
+      "options": {
+        "a": "<a name="http://www.CodeInstitute.com">W3Schools.com</a>",
+        "b": " <a>http://www.CodeInstitute.com</a>",
+        "c": " <a url="http://www.CodeInstitute.com">W3Schools.com</a>",
+        "d": "<a href="http://www.CodeInstitute.com">W3Schools</a>"
+      },
+      "correct_answer": "d"
+    },
+     {
+      "question": "Which character is used to indicate an end tag?",
+      "options": {
+        "a": "*",
+        "b": "<",
+        "c": " ^",
+        "d": "/"
+      },
+      "correct_answer": "d"
+    },
+     {
+      "question": "How can you open a link in a new tab/browser window?",
+      "options": {
+        "a": "<a href="url" new>",
+        "b": "<a href="url" target="new">",
+        "c": "<a href="url" target="_blank">",
+        "d": "<a href="url" target="_blank_page">   "
+      },
+      "correct_answer": "c"
+    },
+     {
+      "question": "Which of these elements are all <table> elements?",
+      "options": {
+        "a": "<table><tr><tt>",
+        "b": "<table><tr><td> ",
+        "c": "<thead><body><tr>",
+        "d": "<thead><body><pr> "
+      },
+      "correct_answer": "b"
+    },
+     {
+      "question": "How can you make a numbered list?",
+      "options": {
+        "a": "<dl>",
+        "b": "<list>",
+        "c": "<ol>",
+        "d": "<ul>"
+      },
+      "correct_answer": "c"
+    },
+     {
+      "question": "How can you make a bulleted list?",
+      "options": {
+        "a": "<ul>",
+        "b": "<ol>",
+        "c": "<list>",
+        "d": "<dl>"
+      },
+      "correct_answer": "a"
+    },
+     {
+      "question": "What is the correct HTML for making a checkbox? ",
+      "options": {
+        "a": "<input type="check">",
+        "b": "<input type="checkbox">",
+        "c": "<check>",
+        "d": "<checkbox>"
+      },
+      "correct_answer": "b"
+    },
+     {
+      "question": "What is the correct HTML for making a text input field?",
+      "options": {
+        "a": "<textfield>",
+        "b": "<textinput type="text">",
+        "c": "<input type="textfield">",
+        "d": "<input type="text">"
+      },
+      "correct_answer": "d"
+    },
+     {
+      "question": "What is the correct HTML for making a drop-down list?",
+      "options": {
+        "a": "<select>",
+        "b": "<list>",
+        "c": "<input type="list">",
+        "d": "<input type="dropdown">"
+      },
+      "correct_answer": "a"
+    },
+    {
+      "question": "What is the correct HTML for inserting an image?",
+      "options": {
+        "a": "<img href="image.gif" alt="MyImage"> ",
+        "b": "<img src="image.gif" alt="MyImage">  ",
+        "c": "<image src="image.gif" alt="MyImage"> ",
+        "d": "<img alt="MyImage">image.gif</img> "
+      },
+      "correct_answer": "b"
+    },
+      {
+      "question": "What is the correct HTML for inserting a background image? ",
+      "options": {
+        "a": "<background img="background.gif"> ",
+        "b": "<body bg="background.gif"> ",
+        "c": "<body style="background-image:url(background.gif)">  ",
+        "d": "<body style="background-image:url(background/image.gif)">  "
+      },
+      "correct_answer": "c"
+    },
+      {
+      "question": "Which HTML element defines the title of a document? ",
+      "options": {
+        "a": "<title>  ",
+        "b": "<meta> ",
+        "c": "<head> ",
+        "d": "<heading> "
+      },
+      "correct_answer": "a"
+    },
+      {
+      "question": "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?",
+      "options": {
+        "a": "alt",
+        "b": "title",
+        "c": "src",
+        "d": "longdesc"
+      },
+      "correct_answer": "a"
+    },
+      {
+      "question": "Which HTML element is used to specify a footer for a document or section? ",
+      "options": {
+        "a": "<bottom>",
+        "b": "<footer> ",
+        "c": "<header> ",
+        "d": "<under>"
+      },
+      "correct_answer": "b"
+    },
+      {
+      "question": "What is the correct HTML element for playing audio files?",
+      "options": {
+        "a": "<audio>",
+        "b": "<sound>",
+        "c": "<mp3>",
+        "d": "<sterio> "
+      },
+      "correct_answer": "a"
+    },
+    
+    
+  ]
+
