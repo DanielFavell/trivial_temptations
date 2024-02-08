@@ -1,4 +1,4 @@
-"questions": [
+{"questions": [
     {
       "question": "What does HTML stand for?",
       "options": {
@@ -133,9 +133,9 @@
       "question": "What is the correct HTML for adding a background color?",
       "options": {
         "a": "<background>yellow</background>",
-        "b": "<body bg="yellow">",
-        "c": " <body style="background-color:yellow;">  ",
-        "d": " <body style="backgroundColor:yellow;">  "
+        "b": "<body bg='yellow'>",
+        "c": " <body style='background-color:yellow;'>  ",
+        "d": " <body style='backgroundColor:yellow;'>  "
       },
       "correct_answer": "c"
     },
@@ -162,10 +162,10 @@
      {
       "question": "What is the correct HTML for creating a hyperlink?",
       "options": {
-        "a": "<a name="http://www.CodeInstitute.com">W3Schools.com</a>",
+        "a": "<a name='http://www.CodeInstitute.com'>W3Schools.com</a>",
         "b": " <a>http://www.CodeInstitute.com</a>",
-        "c": " <a url="http://www.CodeInstitute.com">W3Schools.com</a>",
-        "d": "<a href="http://www.CodeInstitute.com">W3Schools</a>"
+        "c": " <a url='http://www.CodeInstitute.com'>W3Schools.com</a>",
+        "d": "<a href='http://www.CodeInstitute.com'>W3Schools</a>"
       },
       "correct_answer": "d"
     },
@@ -182,10 +182,10 @@
      {
       "question": "How can you open a link in a new tab/browser window?",
       "options": {
-        "a": "<a href="url" new>",
-        "b": "<a href="url" target="new">",
-        "c": "<a href="url" target="_blank">",
-        "d": "<a href="url" target="_blank_page">   "
+        "a": "<a href='url' new>",
+        "b": "<a href='url' target='new'>",
+        "c": "<a href='url' target='_blank'>",
+        "d": "<a href='url' target='_blank_page'>   "
       },
       "correct_answer": "c"
     },
@@ -222,8 +222,8 @@
      {
       "question": "What is the correct HTML for making a checkbox? ",
       "options": {
-        "a": "<input type="check">",
-        "b": "<input type="checkbox">",
+        "a": "<input type='check'>",
+        "b": "<input type='checkbox'>",
         "c": "<check>",
         "d": "<checkbox>"
       },
@@ -233,9 +233,9 @@
       "question": "What is the correct HTML for making a text input field?",
       "options": {
         "a": "<textfield>",
-        "b": "<textinput type="text">",
-        "c": "<input type="textfield">",
-        "d": "<input type="text">"
+        "b": "<textinput type='text'>",
+        "c": "<input type='textfield'>",
+        "d": "<input type='text'>"
       },
       "correct_answer": "d"
     },
@@ -244,28 +244,28 @@
       "options": {
         "a": "<select>",
         "b": "<list>",
-        "c": "<input type="list">",
-        "d": "<input type="dropdown">"
+        "c": "<input type='list'>",
+        "d": "<input type='dropdown'>"
       },
       "correct_answer": "a"
     },
     {
       "question": "What is the correct HTML for inserting an image?",
       "options": {
-        "a": "<img href="image.gif" alt="MyImage"> ",
-        "b": "<img src="image.gif" alt="MyImage">  ",
-        "c": "<image src="image.gif" alt="MyImage"> ",
-        "d": "<img alt="MyImage">image.gif</img> "
+        "a": "<img href='image.gif' alt='MyImage'> ",
+        "b": "<img src='image.gif' alt='MyImage'>  ",
+        "c": "<image src='image.gif' alt='MyImage'> ",
+        "d": "<img alt='MyImage'>image.gif</img> "
       },
       "correct_answer": "b"
     },
       {
       "question": "What is the correct HTML for inserting a background image? ",
       "options": {
-        "a": "<background img="background.gif"> ",
-        "b": "<body bg="background.gif"> ",
-        "c": "<body style="background-image:url(background.gif)">  ",
-        "d": "<body style="background-image:url(background/image.gif)">  "
+        "a": "<background img='background.gif'> ",
+        "b": "<body bg='background.gif'> ",
+        "c": "<body style='background-image:url(background.gif)'>  ",
+        "d": "<body style='background-image:url(background/image.gif)'>  "
       },
       "correct_answer": "c"
     },
@@ -308,8 +308,6 @@
         "d": "<sterio> "
       },
       "correct_answer": "a"
-    },
-    
-    
-  ]
+    }
+  ]}
 
