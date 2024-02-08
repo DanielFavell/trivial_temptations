@@ -9,6 +9,13 @@ body {
     background-color: rgb(72, 127, 179);
   }
 
+  #backgroundimage{
+    width: 30%;
+    height: 30%;
+    margin-left: 35%;
+    margin-top: 7%;
+  }
+
 #question-area{
        margin-top: 20px;
 }
