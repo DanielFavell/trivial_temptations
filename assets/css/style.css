@@ -1,4 +1,5 @@
 
+
 *{
     font-family: 'Rubik', sans-serif;
     margin: 0; 
@@ -78,11 +79,76 @@ button:focus{
     background-color: #44b927;
 }
 
+
+.bullets{
+    
+    border-top: 1px solid #dfdfdf;
+    background-color: #fff;
+    display: flex;
+    padding: 20px;
+}
+
+.spans{
+    flex: 1;
+    display: flex;
+}
+
+.spans span{
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.spans span.on{
+    background-color: #0075ff;
+}
+.results span{
+    font-weight: bold;
+}
+.results span.perfect{
+    color: #0075ff;
+}
+.results span.good{
+    color: #009688;
+}
+.results span.try_again{
+    color: #dc0a0a;
+}
+
 .center{
     text-align: center;
 }
 
+
+.footer a{
+    color: #aaaaaa;
+    transition: color 0.2s;
+    margin: 0 10px; 
+    border-radius: 50%;
+    text-decoration: none;
+    
+}
+.footer a:hover
+{
+    color: #333333;
+}
+
+.social-text{
+    font-size: small;
+    color: darksalmon;
+    
+}
+
+
+.redButton{
+    background-color: #dc0a0a !important;
+}
+
+
 @media only screen and (min-width: 434px) {
+
 
 
     
