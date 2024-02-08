@@ -6,26 +6,22 @@ let score = document.querySelector("#scoreNumber");
 let currentQuestion = null;
 const answerButtons = document.querySelectorAll(".answers-button");
 let selectedAnswer = null;
-let questionNumber = 0
+let questionNumber = 0;
 let gameEnded = false;
 
 function pageLoaded() {
     submitButton.addEventListener("click", submitAnswer);
     answerButtons.forEach(item => {
-        item.addEventListener("click", updateSelectedAnswer)
+        item.addEventListener("click", updateSelectedAnswer);
     });
-    startGame()
+    startGame();
 }
 
 async function generateQuestionArray() {
     let temp;
-    const res = await fetch("html_questions.json")
+    const res = await fetch("html_questions.json");
     temp = await res.json();
-    return temp
-}
-
-function saveInfo(info) {
-    questionObject = info;
+    return temp;
 }
 
 window.onload = pageLoaded();
@@ -34,10 +30,10 @@ setInterval(() => {
     if (!gameEnded){
         if (Number(document.querySelector('#timer').textContent) > 0) {
             let timeRemaining = Number(document.querySelector('#timer').textContent);
-            timeRemaining--
+            timeRemaining--;
             document.querySelector('#timer').textContent = timeRemaining;
         } else {
-            submitAnswer()
+            submitAnswer();
         }
     }
 }, 1000);
@@ -52,26 +48,26 @@ function getKeyByValue(object, value) {
 }
 function submitAnswer() {
     if(gameEnded){
-        startGame()
+        startGame();
     }
     else{
     if (currentQuestion.correct_answer === getKeyByValue(currentQuestion.options, selectedAnswer)) {
         increaseScore();
     }
    
-    questionNumber++
-    document.querySelector(".off").classList.replace("off","on")
+    questionNumber++;
+    document.querySelector(".off").classList.replace("off","on");
     if (questionNumber >= 10) {
         if (score.textContent === "10"){
-            document.querySelector(".results").innerHTML = `<span class="perfect">Perfect</span> You answered 10 From 10`
+            document.querySelector(".results").innerHTML = `<span class="perfect">Perfect</span> You answered 10 From 10`;
             }
             else if(Number(score.textContent) >= 5){
-                document.querySelector(".results").innerHTML = `<span class="good">Good</span> You have answered more than 5 From 10`
+                document.querySelector(".results").innerHTML = `<span class="good">Good</span> You have answered more than 5 From 10`;
             }else{
-                document.querySelector(".results").innerHTML = `<span class="try_again">Try Again</span> You have answered less than 5 From 10`
+                document.querySelector(".results").innerHTML = `<span class="try_again">Try Again</span> You have answered less than 5 From 10`;
             }
-            submitButton.innerText = "Reset"
-            submitButton.classList.add("redButton")
+            submitButton.innerText = "Reset";
+            submitButton.classList.add("redButton");
         gameEnded = true;
     }
     else{
@@ -86,7 +82,7 @@ function newQuestion() {
     questionText.textContent = currentQuestion.question;
     generateAnswers();
     selectedAnswer = null;
-    document.querySelector('#timer').textContent = "10"
+    document.querySelector('#timer').textContent = "10";
 }
 
 
@@ -110,23 +106,23 @@ async function startGame(){
     questionObject = questionObject.questions;
     possibleQuestions = [];
     let progress = document.querySelectorAll(".on");
-    document.querySelector("#submit").classList.remove("redButton")
-    submitButton.innerText = "Next"
+    document.querySelector("#submit").classList.remove("redButton");
+    submitButton.innerText = "Next";
     for (let circle of progress){
-        circle.classList = "off"
+        circle.classList = "off";
     }
 
-    document.querySelector(".results").innerHTML = ``
+    document.querySelector(".results").innerHTML = ``;
     while (possibleQuestions.length < 10) {
         let randomQuestionNumber = Math.floor(Math.random() * 31);
         if (possibleQuestions.includes(randomQuestionNumber)){
         continue;
         }
-        possibleQuestions.push(randomQuestionNumber)
+        possibleQuestions.push(randomQuestionNumber);
     }
     for (let i = 0; questionArray.length < 10; i++) {
-        questionArray.push(questionObject[possibleQuestions[i]])
+        questionArray.push(questionObject[possibleQuestions[i]]);
     }
-    score.textContent = "0"
+    score.textContent = "0";
     newQuestion();
 }
