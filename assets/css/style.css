@@ -114,9 +114,31 @@ button:focus{
     text-align: center;
 }
 
+
+.footer a{
+    color: #aaaaaa;
+    transition: color 0.2s;
+    margin: 0 10px; 
+    border-radius: 50%;
+    text-decoration: none;
+    
+}
+.footer a:hover
+{
+    color: #333333;
+}
+
+.social-text{
+    font-size: small;
+    color: darksalmon;
+    
+}
+
+
 .redButton{
     background-color: #dc0a0a !important;
 }
+
 
 @media only screen and (min-width: 434px) {
 
