@@ -30,17 +30,17 @@ body {
     justify-content: center;
     align-items: center;
     
-    
 }
 
-
  .size {
-    width: 200px;
+    width: 500px;
     height: 100px;
+    margin-top: 5px;
+    margin-left: 3px;
 }
 
 .answers-button{
-    inline-size: 150px;
+ inline-size: 150px;
     overflow-wrap: break-word;
 
 }
@@ -53,7 +53,7 @@ body {
 
 #all-buttons {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 #submit{
     background-color: #2fc76e;
@@ -66,8 +66,8 @@ body {
     font-family: inherit;
     /*padding: 1.3rem;*/
     margin: auto;
-    margin-top:50px;
-    margin-bottom: 50px;
+    margin-top:20px;
+    margin-bottom: 20px;
     text-align: center;
     height: 300%;
     width: 150px;
@@ -151,7 +151,7 @@ button:focus{
     background-color: #dc0a0a !important;
 }
 
-
+/*
 @media only screen and (min-width: 434px) {
 
 
@@ -175,3 +175,4 @@ button:focus{
         margin-left: 100px;
     }
 }
+*/
