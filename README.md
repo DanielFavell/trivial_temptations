@@ -7,10 +7,11 @@ Trivial Temptations is a site that allows users to test their knowledge of HTML 
 
 The user is given 10 questions with 4 possible answers.
 At the end of the game the user is give a message telling them how well they did.
+There is a link to social media sites where performance in the quiz may be shared.
 
 ### Features Left to Implement
 
-- Feature ideas...
+Ideally there would be a home page with various quizzes the user can choose from.
 
 ## Testing 
 
@@ -27,7 +28,6 @@ The site is responsive and works on all screen sizes.
 
 ### Unfixed Bugs
 
-Text is sometimes outside the buttons.
 Buttons sometimes move.
 
 ## Deployment
@@ -41,14 +41,15 @@ The live link can be found here - https://danielfavell.github.io/trivial_temptat
 
 
 ## Credits 
-
+Daniel Favell (Lead)
+Sherrif Asam
+Sam Danzig
 
 ### Content 
 
 - The code to access a key from its value was taken from https://stackoverflow.com/questions/9907419/how-to-get-a-key-in-a-javascript-object-by-its-value
 - Some of the code to access the value of a promise was taken from https://stackoverflow.com/questions/29516390/how-can-i-access-the-value-of-a-promise
 - The icons in the footer were taken from ...
-
 ### Media
 
 - The image used for the logo was ...
