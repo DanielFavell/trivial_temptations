@@ -1,7 +1,6 @@
 # Trivial Temptations
 
-
-Trivial Temptations is a site that allows users to test their knowledge of HTML and CSS. Trivial Temptations will be useful to test your knowledge or to brag to friends!
+Trivial Temptations is a site that tempts users to test their knowledge of HTML and CSS. Trivial Temptations will be useful to test your knowledge or to brag to friends!
 
 ## Features 
 
@@ -11,13 +10,18 @@ There is a link to social media sites where performance in the quiz may be share
 
 ### Features Left to Implement
 
-Ideally there would be a home page with various quizzes the user can choose from.
+
+Ideally there would be a home page with multiple quizzes to choose from. 
+There could be some way to automatically share the quiz score on social media, rather than having to type it out manually.
+The contrast in some areas of the site could be improved.
+Another feature could be to let you know which of the questions was the correct one, after you have answered wrongly.
+A feature to go back to the last question could be helpful for the user.
+Though the quiz is quite simple, an instruction page with an explanation of intent could be courteous for the user.
+
 
 ## Testing 
 
 The site is responsive and works on all screen sizes.
-
-
 
 ### Validator Testing 
 
@@ -43,9 +47,7 @@ The live link can be found here - https://danielfavell.github.io/trivial_temptat
 
 
 ## Credits 
-Daniel Favell (Lead)
-Sherrif Asam
-Sam Danzig
+
 
 ### Content 
 
@@ -58,5 +60,8 @@ The questions level test the fundemental knowledge of HTML and CSS. After the qu
 
 ### Media
 
+
+- The image used for the logo was taken from Looka.com.
 - The image used for the favicon was made with https://favicon.io/favicon-generator/
+
 
