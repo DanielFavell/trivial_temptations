@@ -35,25 +35,23 @@ body {
  .size {
     width: 500px;
     height: 100px;
-    margin-top: 5px;
-    margin-left: 3px;
+    margin-top: 3px;
+    margin-left: 0px;
 }
 
 .answers-button{
- inline-size: 150px;
-    overflow-wrap: break-word;
+ inline-size: 200px;
+ overflow-wrap: break-word;
+ 
 
 }
 
-.answers-button{
-    inline-size: 150px;
-    overflow-wrap: break-word;
 
-}
 
 #all-buttons {
     text-align: center;
     margin-top: 10px;
+    
 }
 #submit{
     background-color: #2fc76e;
@@ -152,27 +150,39 @@ button:focus{
 }
 
 /*
-@media only screen and (min-width: 434px) {
-
-
-
+@media only screen and (min-width: 500px) {
+            
+    .answers-button{
+        inline-size: 310px;
+        overflow-wrap: break-word;
+    }*/
+    /*.size {
+        width: 500px;
+        height: 100px;
     
-    #buttons-1-2 {
-        margin-bottom: 100px;
+    
+
+}*/
+/*
+@media only screen and (min-width: 630px) {
+            
+    .answers-button{
+        inline-size: 500px;
+        overflow-wrap: break-word;
     }
     
-    .left {
-        margin-left: 25px;
-    }
-
-}
-
-
-
-@media only screen and (min-width: 510px) {
     
-    .left {
-        margin-left: 100px;
-    }
+
 }
 */
+@media only screen and (min-width: 400px) {
+    #buttons-1-2 {
+        display:flex;
+        justify-content: center;
+        
+    }
+    #buttons-3-4 {
+        display: flex;
+        justify-content: center;
+    }
+}
