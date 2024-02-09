@@ -28,6 +28,8 @@ The site is responsive and works on all screen sizes.
 
 ### Unfixed Bugs
 
+
+Text is sometimes outside the buttons. 
 Buttons sometimes move.
 
 ## Deployment
@@ -49,7 +51,12 @@ Sam Danzig
 
 - The code to access a key from its value was taken from https://stackoverflow.com/questions/9907419/how-to-get-a-key-in-a-javascript-object-by-its-value
 - Some of the code to access the value of a promise was taken from https://stackoverflow.com/questions/29516390/how-can-i-access-the-value-of-a-promise
-- The icons in the footer were taken from ...
+- The HTML and CSS question bank (30 in total) is sourced from the W3 Schools at:
+https://www.w3schools.com/css/css_quiz.asp
+also ChatGPT  (https://chat.openai.com) is used to come up with some more relent questions.
+The questions level test the fundemental knowledge of HTML and CSS. After the questions has be sourced , there were used to construct the jason file: html_questions.jason. The jason file is then fetched using java script. For future work we could use an API (could be the W3 schools API) to access their questions bank which has more questions , they are dynamic and cover wider levels of HTML and CSS expertise levels. 
+
 ### Media
 
 - The image used for the favicon was made with https://favicon.io/favicon-generator/
+
